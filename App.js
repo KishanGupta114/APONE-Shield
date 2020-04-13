@@ -172,6 +172,7 @@ var styles = StyleSheet.create({
   },
   header: {
     flex: 1,
+
   },
   footer: {
     flex: 2,
@@ -202,8 +203,7 @@ var styles = StyleSheet.create({
   button_container: {
     alignItems: 'center',
     justifyContent: 'center',
-    borderBottomLeftRadius: 50,
-    borderBottomRightRadius: 50,
+    height: 80,
   },
   animation: {
     backgroundColor: '#93278f',
@@ -216,8 +216,8 @@ var styles = StyleSheet.create({
   },
   textLogin: {
     color: 'white',
-    fontWeight: 'bold',
-    fontSize: 20,
+    fontWeight: '700',
+    fontSize: 18,
     letterSpacing: 2,
   },
   signUp: {

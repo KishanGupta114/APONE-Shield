@@ -23,8 +23,8 @@ const styles = StyleSheet.create({
   },
   myButton: {
     padding: 5,
-    height: 50,
-    width: 160,
+    height: 45,
+    width: 350,
     borderBottomLeftRadius: 50,
     borderBottomRightRadius: 50,
     backgroundColor: 'purple',
