@@ -13,7 +13,7 @@ import {
 import {TypingAnimation} from 'react-native-typing-animation';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import * as Animatable from 'react-native-animatable';
-
+import Button from './src/screens/SignUpButton';
 export default class LogIn extends React.Component {
   constructor(props) {
     super(props);
@@ -149,11 +149,12 @@ export default class LogIn extends React.Component {
             </View>
           </TouchableOpacity>
 
+          <View>
+          <Button />
+          </View>
+
           <View style={styles.signUp}>
             <Text style={{color: 'black'}}>Don't have an account?</Text>
-            <TouchableOpacity>
-            <Text style={{color: 'blue'}}> Sign up</Text>
-            </TouchableOpacity>
           </View>
         </View>
       </View>
@@ -201,12 +202,15 @@ var styles = StyleSheet.create({
   button_container: {
     alignItems: 'center',
     justifyContent: 'center',
+    borderBottomLeftRadius: 50,
+    borderBottomRightRadius: 50,
   },
   animation: {
     backgroundColor: '#93278f',
     paddingVertical: 10,
     marginTop: 40,
-    borderRadius: 100,
+    borderTopLeftRadius: 50,
+    borderTopRightRadius: 50,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -214,6 +218,7 @@ var styles = StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
     fontSize: 20,
+    letterSpacing: 2,
   },
   signUp: {
     flexDirection: 'row',
